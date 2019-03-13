@@ -184,8 +184,31 @@ p {
     margin-top: -120px;
 }
 
+@media(max-width: 800px) {
+    .main-header {
+        width: 100%;
+        flex-direction: column-reverse;
+        margin-top: -180px;
+    }
+}
+
 .main-header img {
     margin-left: 14.25px;
+}
+
+@media(max-width: 800px) {
+    .main-header img {
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+}
+
+@media(max-width: 800px) {
+    .main-header nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
 }
 
 .main-header nav a {
@@ -210,6 +233,12 @@ p {
     align-items: center;
     margin-top: 120px;
     margin-bottom: 60px;
+}
+
+@media(max-width: 800px) {
+    .title-section {
+        margin-top: 180px;
+    }
 }
 
 #title {
