@@ -177,6 +177,13 @@ body {
     }
 }
 
+@media(max-width: 500px) {
+    body {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
 p {
     line-height: 1.2;
 }
@@ -199,6 +206,14 @@ p {
     }
 }
 
+@media(max-width: 500px) {
+    .main-header {
+        width: 100%;
+        margin-top: 0px;
+        position: relative;
+    }
+}
+
 .main-header img {
     margin-left: 14.25px;
 }
@@ -210,11 +225,24 @@ p {
     }
 }
 
+@media(max-width: 500px) {
+    .main-header img {
+        margin-bottom: 20px;
+    }
+}
+
 @media(max-width: 800px) {
     .main-header nav {
         width: 100%;
         display: flex;
         justify-content: space-around;
+    }
+}
+
+@media(max-width: 500px) {
+    .main-header nav {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -225,6 +253,21 @@ p {
     padding: 5px;
     border: 0px solid black;
     border-radius: 5px;
+}
+
+@media(max-width: 500px) {
+    .main-header nav a {
+        width: 100%;
+        border-bottom: 1px solid black;
+        border-radius: 0px;
+        text-align: center;
+        margin-right: 0px;
+        font-size: 20px;
+        padding: 20px 0;
+    }
+    .main-header nav a:first-child {
+        border-top: 1px solid black;
+    }
 }
 
 .main-header nav a:hover {
@@ -249,6 +292,12 @@ p {
     }
     .title-section img {
         display: none;
+    }
+}
+
+@media(max-width: 500px) {
+    .title-section {
+        margin-top: 40px;
     }
 }
 
@@ -287,9 +336,16 @@ p {
     .main-section {
         width: 97%;
         margin: 0 auto;
+        border-top: 2px solid black;
     }
     .middle-img {
         width: 100%;
+    }
+}
+
+@media(max-width: 500px) {
+    .main-section {
+        width: 95%;
     }
 }
 
@@ -306,6 +362,21 @@ p {
     }
     #above-img .about {
         width: 48%;
+    }
+}
+
+@media(max-width: 500px) {
+    #above-img {
+        flex-direction: column;
+    }
+    #above-img .features {
+        width: 97%;
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+    #above-img .about {
+        width: 97%;
+        margin-bottom: 30px;
     }
 }
 
@@ -328,6 +399,25 @@ p {
     width: 32%;
 }
 
+@media(max-width: 500px) {
+    #below-img {
+        flex-direction: column;
+    }
+    #below-img .services {
+        width: 97%;
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+    #below-img .product {
+        width: 97%;
+        margin-bottom: 40px;
+    }
+    #below-img .vision {
+        width: 97%;
+        margin-bottom: 30px;
+    }
+}
+
 .main-footer {
     border-top: 1px solid black;
     margin-bottom: 25px;
@@ -337,6 +427,13 @@ p {
     .main-footer {
         width: 97%;
         margin: 0 auto;
+    }
+}
+
+@media(max-width: 500px) {
+    .main-footer {
+        width: 95%;
+        border-top: 2px solid black;
     }
 }
 
